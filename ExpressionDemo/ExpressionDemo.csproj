@@ -34,7 +34,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
-      <HintPath>..\表达式目录树\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <HintPath>packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -46,7 +46,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Exd\SqlExd.cs" />
     <Compile Include="Helper\ExpressionMapper.cs" />
+    <Compile Include="Helper\MyExpressionVisitor.cs" />
+    <Compile Include="Visitor\ConditionBuilderVisitor.cs" />
+    <Compile Include="Visitor\OperationVisitor.cs" />
     <Compile Include="Helper\ReflectionMapper.cs" />
     <Compile Include="Helper\SerialMapper.cs" />
     <Compile Include="Program.cs" />

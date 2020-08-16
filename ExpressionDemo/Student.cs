@@ -7,6 +7,8 @@ namespace ExpressionDemo
     public class Student
     {
         public int Id;
+        public string Name { get; set; }
+        public int Age { get; set; }
     }
 
     public class People
